@@ -10,7 +10,7 @@
     RootModule        = 'IdentityCommand.UserPortal.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '0.0'
+    ModuleVersion     = '0.1.0'
 
     # ID used to uniquely identify this module
     GUID              = '6ad6b8fc-06dd-4dfa-91cc-77b66adc1558'

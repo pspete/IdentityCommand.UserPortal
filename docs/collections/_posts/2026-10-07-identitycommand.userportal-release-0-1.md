@@ -1,12 +1,16 @@
-# Change Log
+---
+title: "IdentityCommand.UserPortal Release 0.1"
+date: 2026-10-07 00:00:00
+version: 0.1.0
+tags:
+  - Release Notes
+  - Connect-UPTenant
+  - Get-UPAsset
+  - Get-UPAssetSecret
+  - Get-UPModuleData
+---
 
-All notable changes to this project will be documented in this file.
-
-## Unreleased
-
-- N/A
-
-## [0.1.0] - 2026-10-07
+## [0.1.0]
 
 ### Added
 
@@ -21,4 +25,3 @@ All notable changes to this project will be documented in this file.
 - `Get-UPAssetSecret`: retrieve the secret of an asset, optionally recording a `-reason`. Asset
   identifiers pipe from `Get-UPAsset`.
 - `Get-UPModuleData`: get the module version and session configuration data.
-
