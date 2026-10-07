@@ -45,7 +45,7 @@ env:
   GIT_USER_NAME: 'Pete Maan'
   RELEASE_VERSION_GATE: '0.1.0'
   # Stable release notes are written to a post per major.minor version in this folder; empty for none.
-  RELEASE_NOTES_PATH: ''
+  RELEASE_NOTES_PATH: 'docs/collections/_posts'
   # vNext releases are prereleases: <version>-preview<n>.
   PRERELEASE_LABEL: ${{ github.ref == 'refs/heads/vNext' && 'preview' || '' }}
   # IdentityCommand version installed for tests and packaging; the module copies its private helpers.
