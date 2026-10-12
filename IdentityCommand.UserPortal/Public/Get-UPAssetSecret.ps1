@@ -21,7 +21,7 @@ function Get-UPAssetSecret {
 
     process {
 
-        $URI = "$($ISPSSSession.tenant_url)/api/assets/$assetId/secret"
+        $URI = "$(Resolve-RequestUrl)/api/assets/$assetId/secret"
 
         #The endpoint is a POST which takes an optional reason for the retrieval, recorded in the audit
         $body = [ordered]@{}

@@ -1,3 +1,11 @@
+#InModuleScope below runs at discovery, so the module must be imported before then
+BeforeDiscovery {
+    $ManifestPath = Join-Path (Resolve-Path "$(Split-Path -Parent $PSCommandPath)\..\IdentityCommand.UserPortal") 'IdentityCommand.UserPortal.psd1'
+    if ( -not (Get-Module -Name 'IdentityCommand.UserPortal' -All)) {
+        Import-Module -Name "$ManifestPath" -ArgumentList $true -Force -ErrorAction Stop
+    }
+}
+
 Describe $($PSCommandPath -Replace '.Tests.ps1') {
 
     BeforeAll {
