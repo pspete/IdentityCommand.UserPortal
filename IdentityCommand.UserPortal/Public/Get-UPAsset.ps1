@@ -45,7 +45,7 @@ function Get-UPAsset {
 
     process {
 
-        $URI = "$($ISPSSSession.tenant_url)/api/assets"
+        $URI = "$(Resolve-RequestUrl)/api/assets"
 
         $boundparameters = $PSBoundParameters | Get-Parameter
 
