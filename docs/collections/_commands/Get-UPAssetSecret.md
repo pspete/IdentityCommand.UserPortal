@@ -13,7 +13,7 @@ Retrieves the secret of an asset
 ## SYNTAX
 
 ```
-Get-UPAssetSecret [-assetId] <String> [[-reason] <String>] [<CommonParameters>]
+Get-UPAssetSecret [-assetId] <String> [[-reason] <String>] [[-workflowStatus] <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -73,6 +73,23 @@ Aliases:
 
 Required: False
 Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -workflowStatus
+The workflow status of the asset, as output by Get-UPAsset.
+
+An error is written when require_reason is true and -reason is not specified.
+
+```yaml
+Type: PSObject
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 2
 Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False

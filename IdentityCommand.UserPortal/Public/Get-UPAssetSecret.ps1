@@ -18,8 +18,7 @@ function Get-UPAssetSecret {
 
         [parameter(
             Mandatory = $false,
-            ValueFromPipelinebyPropertyName = $true,
-            DontShow = $true
+            ValueFromPipelinebyPropertyName = $true
         )]
         [psobject]$workflowStatus
     )
