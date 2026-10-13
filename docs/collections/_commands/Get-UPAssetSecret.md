@@ -64,6 +64,8 @@ Accept wildcard characters: False
 ### -reason
 The reason for retrieving the secret.
 
+Required when the asset's workflowStatus.require_reason is true.
+
 ```yaml
 Type: String
 Parameter Sets: (All)

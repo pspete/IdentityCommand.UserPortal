@@ -14,12 +14,24 @@ function Get-UPAssetSecret {
             ValueFromPipelinebyPropertyName = $true
         )]
         [ValidateLength(1, 3699)]
-        [String]$reason
+        [String]$reason,
+
+        [parameter(
+            Mandatory = $false,
+            ValueFromPipelinebyPropertyName = $true,
+            DontShow = $true
+        )]
+        [psobject]$workflowStatus
     )
 
     begin { }#begin
 
     process {
+
+        if (($workflowStatus.require_reason -eq $true) -and (-not $PSBoundParameters.ContainsKey('reason'))) {
+            Write-Error -Message "Asset '$assetId' requires a reason: specify -reason" -Category InvalidArgument -TargetObject $assetId
+            return
+        }
 
         $URI = "$(Resolve-RequestUrl)/api/assets/$assetId/secret"
 

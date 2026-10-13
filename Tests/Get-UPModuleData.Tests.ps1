@@ -34,7 +34,7 @@ Describe $($PSCommandPath -Replace '.Tests.ps1') {
         BeforeEach {
 
             $ISPSSSession = [ordered]@{
-                tenant_url         = 'https://somedomain.api.userportal.cyberark.cloud'
+                tenant_url         = 'https://somedomain-userportal.cyberark.cloud'
                 User               = $null
                 TenantId           = 'SomeTenant'
                 SessionId          = 'SomeSession'
