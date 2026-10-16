@@ -1,3 +1,7 @@
+![Logo][Logo]
+
+[Logo]: /docs/media/images/IdentityCommand.UserPortal.png
+
 # IdentityCommand.UserPortal
 
 **IdentityCommand.UserPortal** is a PowerShell module that provides a set of easy-to-use commands, allowing you to interact with the **CyberArk Access API** from within the PowerShell environment.
