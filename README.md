@@ -19,7 +19,7 @@
 [codefactor]: https://www.codefactor.io/repository/github/pspete/IdentityCommand.UserPortal/badge
 [codecov]: https://codecov.io/gh/pspete/IdentityCommand.UserPortal/branch/main/graph/badge.svg
 [codecov-link]: https://codecov.io/gh/pspete/IdentityCommand.UserPortal
-[license]: https://img.shields.io/github/license/pspete/IdentityCommand.UserPortal.svg
+[license]: https://img.shields.io/badge/license-MIT-green.svg
 [license-link]: https://github.com/pspete/IdentityCommand.UserPortal/blob/main/LICENSE
 
 ## Using the Module
